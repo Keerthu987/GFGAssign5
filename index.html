@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFG Assign5</title>
+</head>
+<body background="#F7F7F7">
+    <p id="para">
+        Highlight words of length greater than 4 with Pink 
+    </p>
+    <script>
+        let para=document.getElementById("para");
+        para.innerHTML=para.innerText
+                       .split(" ")
+                       .map((word)=>{
+                        return word.length>4? `<span style="background-color:pink;color:white">${word}</span>` :word 
+                       })
+                       .join(" ")
+    </script>
+    
+</body>
+</html>
